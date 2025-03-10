@@ -30,10 +30,11 @@ body {
 }
 
 .contact-form__heading {
+    font-weight: 300;
     color: #8B7969;
     margin-bottom: 40px;
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
 }
 
 .form {
@@ -80,6 +81,7 @@ body {
 }
 
 .select__arrow {
+    float: right;
     position: absolute;
     width: 40px;
     height: 20px;

@@ -26,7 +26,7 @@
     <main>
         <div class="contact-form__content">
             <div class="contact-form__heading">
-                <h2>Contact</h2>
+                <span>Contact</span>
             </div>
 
             <form class="form">

@@ -68,16 +68,23 @@ body {
 }
 
 .form__input--text input,
-.form__input--textarea textarea,
-.form__select select {
+.form__select-type,
+.form__input--textarea textarea {
     width: 100%;
     margin: 0 20px;
     padding: 10px;
     border: none;
     background-color: #f4f4f4;
     color: #BEB1A6;
-    border-radius: 3px;
     appearance: none;
+}
+
+.select__arrow {
+    position: absolute;
+    width: 40px;
+    height: 20px;
+    background: #BEB1A6;
+    clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
 }
 
 .form__input--text input {
@@ -85,22 +92,83 @@ body {
 }
 
 .form__input--textarea textarea {
-    height: 100px;
     resize: none;
+    height: 120px;
 }
 
-
-
-.form__input--radio {
+.form__input-radio {
     width: 70%;
     margin: 0 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 15%;
+}
+
+
+.gender__radio {
+    position: relative;
+    display: block;
+    padding-left: 28px;
+    user-select: none;
+}
+
+.gender__radio input {
+    display: none;
+}
+
+.gender__radio-mark {
+    margin-top: 2px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 18px;
+    width: 18px;
+    border: 1px solid #8B7969;
+    border-radius: 50%;
+}
+
+.gender__radio-mark::after {
+    content: "";
+    position: absolute;
+    background: #8B7969;
+    border-radius: 50%;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    transform: scale(0); /*opacity: 0;*/
+}
+
+.form__input-radio input + .gender__radio-mark::after {
+    transform: scale(1); /*opacity: 1;*/
+}
+
+label {
+    display: block;
+    cursor: pointer;
+}
+
+.hyphen {
+    align-items: center;
+    margin-top: 6px;
+}
+
+.form__select {
+    display: flex;
+    width: 30%;
 }
 
 
 
+.form__button-submit {
+    background: #82756A;
+    color: white;
+    border: none;
+    padding: 10px 40px;
+    width: 20%;
+    font-size: 16px;
+    cursor: pointer;
+}
 
 
 
@@ -138,18 +206,5 @@ input, select, textarea {
     padding: 10px;
 }*/
 
-textarea {
-    height: 120px;
-}
 
-/* 送信ボタン */
-.submit-button {
-    background-color: #7b6653;
-    color: white;
-    border: none;
-    padding: 15px;
-    width: 100%;
-    font-size: 16px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+

@@ -52,10 +52,19 @@
                         <span class="form__label--required">※</span>
                     </div>
                     <div class="form__group-content">
-                        <div class="form__input--radio">
-                            <input type="radio" name="gender" value="男性" checked> 男性
-                            <input type="radio" name="gender" value="女性"> 女性
-                            <input type="radio" name="gender" value="その他"> その他
+                        <div class="form__input-radio">
+                            <label class="gender__radio">
+                                <input type="radio" name="gender" value="男性" checked>
+                                <span class="gender__radio-mark"></span> 男性
+                            </label>
+                            <label class="gender__radio">
+                                <input type="radio" name="gender" value="女性">
+                                <span class="gender__radio-mark"></span> 女性
+                            </label>
+                            <label class="gender__radio">
+                                <input type="radio" name="gender" value="その他">
+                                <span class="gender__radio-mark"></span> その他
+                            </label>
                         </div>
                     </div>
                 </div>
@@ -83,9 +92,9 @@
                     <div class="form__group-content">
                         <div class="form__input--text">
                             <input type="tel" name="tel-1" placeholder="080" value="{{ old('tel-1') }}">
-                            <span>-</span>
+                            <span class="hyphen">-</span>
                             <input type="tel" name="tel-2" placeholder="1234" value="{{ old('tel-2') }}">
-                            <span>-</span>
+                            <span class="hyphen">-</span>
                             <input type="tel" name="tel-3" placeholder="5678" value="{{ old('tel-3') }}">
                         </div>
                         <!--エラー-->
@@ -132,6 +141,7 @@
                             <option value="shop">ショップへのお問い合わせ</option>
                             <option value="other">その他</option>
                         </select>
+                        <span class="select__arrow"></span>
                         <!--エラー-->
                     </div>
                 </div>

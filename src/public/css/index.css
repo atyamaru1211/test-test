@@ -82,6 +82,8 @@ body {
 
 .select__arrow {
     float: right;
+    /*もしくは、
+    position:relative;とz-indexを使って重ねられるかも*/
     position: absolute;
     width: 40px;
     height: 20px;

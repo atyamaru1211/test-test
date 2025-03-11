@@ -1,0 +1,175 @@
+body {
+    font-family: "Inika";
+}
+
+
+.header {
+    border-bottom: 1px solid #E0DFDE;
+}
+
+.header__inner {
+    margin: 0 auto;
+    padding: 20px 15px;
+    text-align: center;
+    max-width: 1230px;
+}
+
+.header__logo {
+    color: #8B7969;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+
+.header__logout-button {
+    background: none;
+    border: 1px solid #c4b7a3;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.admin-form__content {
+    margin: 0 auto;
+    padding: 30px 15px;
+    max-width: 1230px;
+}
+
+.admin-form__heading {
+    font-weight: 300;
+    color: #8B7969;
+    margin-bottom: 40px;
+    text-align: center;
+    font-size: 35px;
+}
+
+.admin__search-form {
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+}
+
+.admin__search-fields {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.admin__search-input-wrapper {
+}
+
+.admin__search-input {
+    padding: 10px;
+    border: 1px solid #E3DED9;
+    background-color: #FBFBFB;
+    color: #beb1a6;
+}
+
+.admin__search-select-wrapper {
+    position: relative;
+}
+
+.admin__search-select-wrapper::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 12px;
+    border-right: 6px solid transparent;
+    border-left: 6px solid transparent;
+    border-top: 12px solid #E0DFDE;
+    border-bottom: 0;
+    pointer-events: none;
+}
+
+.admin__search-select {
+    padding: 10px;
+    border: 1px solid #E3DED9;
+    background-color: #F4F4F4;
+    color: #beb1a6;
+    appearance: none;
+}
+
+.admin__search-button {
+}
+
+.admin__search-button-submit {
+    padding: 10px 30px;
+    border: 1px solid #8B7969;
+    background-color: #82756A;
+    color: #FFFFFF;
+}
+
+.admin__reset-button {
+    padding: 10px 30px;
+    border: none;
+    background-color: #D9C6B5;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+
+
+
+.customer-admin__search-fields {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 10px;
+}
+
+.customer-admin__search-input,
+.customer-admin__search-select {
+    padding: 8px;
+    border: 1px solid #ccc;
+}
+
+.customer-admin__search-buttons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.customer-admin__search-button,
+.customer-admin__reset-button {
+    padding: 8px 16px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+}
+
+.customer-admin__reset-button {
+    background-color: #6c757d;
+}
+
+.customer-admin__export-button {
+    display: inline-block;
+    padding: 8px 16px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.customer-admin__table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+.customer-admin__table-header,
+.customer-admin__table-cell {
+    padding: 8px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.customer-admin__detail-link {
+    color: blue;
+    text-decoration: none;
+}
+
+.customer-admin__pagination {
+    margin-top: 20px;
+}

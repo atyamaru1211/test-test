@@ -23,16 +23,16 @@
 
 .thanks__button {
     position: absolute;
-    top: 55%;
+    top: 58%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0 auto;
     text-align: center;
-    width: 10%;
+    width: 30%;
 }
 
 .thanks__button-home {
-    padding: 5px 10px;
+    padding: 10px 40px;
     text-decoration: none;
     font-family: "Inika";
     color: #ffffff;
